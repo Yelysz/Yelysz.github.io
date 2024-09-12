@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de Integrantes del equipo">
+  <meta name="keywords" content="integrantes, equipo, universidad">
+  <title>Integrantes</title>
+  <link rel="stylesheet" href="styles/info.css">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+  rel="stylesheet"
+/>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Type-C</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html"> ></a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <article class="flex nuevo">
+      <section class="">
+        <h2>Integrantes del Equipo</h2>
+        <br>
+        <div class="info-div">
+          <div class="flex">
+            <!-- Miembros del equipo -->
+            <div class="card">
+              <img src="/img/img_avatar2.png" alt="Avatar" style="width:100%">
+              <div class="container-img">
+                <h4><b>Anyelys Torres Castillo</b></h4>
+                <p>Cargo del Integrante</p>
+              </div>
+            </div>
+            <!-- Repite el bloque de card para cada miembro -->
+            <div class="card">
+              <img src="/img/img_avatar2.png" alt="Avatar" style="width:100%">
+              <div class="container-img">
+                <h4><b>Nombre del Integrante</b></h4>
+                <p>Cargo del Integrante</p>
+              </div>
+            </div>
+            <!-- Añadir más tarjetas según sea necesario -->
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
